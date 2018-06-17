@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "build": "npm run clean && npm run build:client && npm run build:server",
     "build:client": "ng build --prod",
-    "build:server": "tsc --project server --outDir dist/server",
+    "build:server": "tsc --project server --outDir dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

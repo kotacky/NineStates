@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { SampleComponent } from './sample.component';
+import { SampleServiceModule } from '../../services/sample/sample_service.module';
 
 /**
  * サンプル コンポーネントモジュール
@@ -12,7 +13,8 @@ import { SampleComponent } from './sample.component';
     imports: [
         CommonModule,
         RouterModule,
-        FormsModule
+        FormsModule,
+        SampleServiceModule
     ],
     declarations: [
       SampleComponent,

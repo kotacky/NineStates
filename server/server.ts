@@ -1,5 +1,7 @@
 // アプリケーションサーバ起動設定
 import Koa = require('koa');
+import path = require('path');
+import koaStatic = require('koa-static');
 import bodyparser = require('koa-bodyparser');
 import MiddlewareRouter = require('./middleware.router');
 
@@ -12,6 +14,9 @@ app.use(bodyparser({
     }
 }))
 .use(new MiddlewareRouter().routes());
+
+// クライアント側ミドルウェアの提供
+app.use(koaStatic(path.resolve(process.cwd(), './dist/client')));
 
 // サービス開始
 const port = 3000;

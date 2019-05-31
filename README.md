@@ -34,7 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 > mongo  
 > use admin  
-> db.createUser({user: "wiss1", pwd: "wiss1no1", roles:[{role: "userAdmin", db: "NineStates"}]})  
+> db.createUser({user: "wiss1", pwd: "*****", roles:[{role: "userAdmin", db: "NineStates"}]})  
 > use NineStates  
 > db.createCollection('users')  
 > show collections  

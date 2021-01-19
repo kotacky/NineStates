@@ -38,7 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 > use NineStates  
 > db.createCollection('users')  
 > show collections  
-> db.users.insert({name: "井手浩太", address: "埼玉県和光市"});  
+> db.users.insert({name: "佐藤一郎", address: "埼玉県所沢市"});  
 > db.users.insert({name: "山田太郎", address: "東京都港区"});  
 > db.users.find()
 
